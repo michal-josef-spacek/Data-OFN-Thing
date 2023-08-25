@@ -22,11 +22,11 @@ has description => (
 	is => 'ro',
 );
 
-has invalidated => (
+has id => (
 	is => 'ro',
 );
 
-has id => (
+has invalidated => (
 	is => 'ro',
 );
 
