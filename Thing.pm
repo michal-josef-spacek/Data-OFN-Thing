@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Mo qw(build default is);
-use Mo::utils qw(check_array_object check_isa);
+use Mo::utils qw(check_array_object check_isa check_number);
 
 our $VERSION = 0.01;
 
