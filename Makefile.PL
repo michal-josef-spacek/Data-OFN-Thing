@@ -20,6 +20,7 @@ readme_from 'Thing.pm';
 recursive_author_tests('xt');
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.05;
+requires 'Mo::utils::IRI' => 0.02;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-OFN-Thing/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-OFN-Thing';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-OFN-Thing';

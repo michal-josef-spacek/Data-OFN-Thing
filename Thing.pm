@@ -5,6 +5,7 @@ use warnings;
 
 use Mo qw(build default is);
 use Mo::utils qw(check_array_object check_isa check_number);
+use Mo::utils::IRI 0.02 qw(check_iri);
 
 our $VERSION = 0.01;
 
@@ -63,7 +64,7 @@ sub BUILD {
 	check_number($self, 'id');
 
 	# Check iri.
-	# TODO
+	check_iri($self, 'iri');
 
 	# Check name.
 	check_array_object($self, 'name', 'Data::Text::Simple', 'Name');
