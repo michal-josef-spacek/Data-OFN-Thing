@@ -51,29 +51,29 @@ has updated => (
 sub BUILD {
 	my $self = shift;
 
-	# Check attachment.
+	# Check 'attachment'.
 	check_array_object($self, 'attachment', 'Data::OFN::DigitalObject',
 		'Digital object');
 
-	# Check created.
+	# Check 'created'.
 	check_isa($self, 'created', 'Data::OFN::Common::TimeMoment');
 
-	# Check invalidated.
+	# Check 'invalidated'.
 	check_isa($self, 'invalidated', 'Data::OFN::Common::TimeMoment');
 
-	# Check id.
+	# Check 'id'.
 	check_number($self, 'id');
 
-	# Check iri.
+	# Check 'iri'.
 	check_iri($self, 'iri');
 
-	# Check name.
+	# Check 'name'.
 	check_array_object($self, 'name', 'Data::Text::Simple', 'Name');
 
-	# Check relevant_to.
+	# Check 'relevant_to'.
 	check_isa($self, 'relevant_to', 'Data::OFN::Common::TimeMoment');
 
-	# Check updated.
+	# Check 'updated'.
 	check_isa($self, 'updated', 'Data::OFN::Common::TimeMoment');
 
 	return;
