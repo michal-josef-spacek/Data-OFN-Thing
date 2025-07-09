@@ -59,6 +59,9 @@ sub BUILD {
 	# Check 'created'.
 	check_isa($self, 'created', 'Data::OFN::Common::TimeMoment');
 
+	# Check 'description'.
+	check_array_object($self, 'description', 'Data::Text::Simple', 'Description');
+
 	# Check 'invalidated'.
 	check_isa($self, 'invalidated', 'Data::OFN::Common::TimeMoment');
 
