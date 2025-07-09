@@ -6,6 +6,7 @@ use warnings;
 use Mo qw(build default is);
 use Mo::utils qw(check_array_object check_isa check_number);
 use Mo::utils::IRI 0.02 qw(check_iri);
+use Mo::utils::Number qw(check_positive_natural);
 
 our $VERSION = 0.01;
 
@@ -62,7 +63,7 @@ sub BUILD {
 	check_isa($self, 'invalidated', 'Data::OFN::Common::TimeMoment');
 
 	# Check 'id'.
-	check_number($self, 'id');
+	check_positive_natural($self, 'id');
 
 	# Check 'iri'.
 	check_iri($self, 'iri');

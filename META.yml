@@ -25,6 +25,7 @@ requires:
   Mo: 0
   Mo::utils: 0.05
   Mo::utils::IRI: 0.02
+  Mo::utils::Number: 0
   perl: 5.8.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Data-OFN-Thing/issues
