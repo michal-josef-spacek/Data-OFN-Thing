@@ -52,7 +52,8 @@ sub BUILD {
 	my $self = shift;
 
 	# Check attachment.
-	# TODO
+	check_array_object($self, 'attachment', 'Data::OFN::DigitalObject',
+		'Digital object');
 
 	# Check created.
 	check_isa($self, 'created', 'Data::OFN::Common::TimeMoment');
