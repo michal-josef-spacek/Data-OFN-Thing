@@ -8,7 +8,7 @@ use Mo::utils qw(check_array_object check_isa);
 use Mo::utils::IRI 0.02 qw(check_iri);
 use Mo::utils::Number qw(check_positive_natural);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has attachment => (
 	default => [],
@@ -473,6 +473,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
