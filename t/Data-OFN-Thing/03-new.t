@@ -54,6 +54,13 @@ $obj = Data::OFN::Thing->new(
 			'text' => decode_utf8('Jméno'),
 		),
 	],
+	'updated' => Data::OFN::Common::TimeMoment->new(
+		'date' => DateTime->new(
+			'day' => 30,
+			'month' => 1,
+			'year' => 2025,
+		),
+	),
 );
 isa_ok($obj, 'Data::OFN::Thing');
 

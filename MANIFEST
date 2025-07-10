@@ -26,7 +26,8 @@ t/Data-OFN-Thing/07-id.t
 t/Data-OFN-Thing/08-invalidated.t
 t/Data-OFN-Thing/09-iri.t
 t/Data-OFN-Thing/10-name.t
-t/Data-OFN-Thing/11-updated.t
+t/Data-OFN-Thing/11-relevant_to.t
+t/Data-OFN-Thing/12-updated.t
 Thing.pm
 xt/Data-OFN-Thing/01-pod_coverage.t
 xt/Data-OFN-Thing/02-pod.t
