@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Mo qw(build default is);
-use Mo::utils qw(check_array_object check_isa check_number);
+use Mo::utils qw(check_array_object check_isa);
 use Mo::utils::IRI 0.02 qw(check_iri);
 use Mo::utils::Number qw(check_positive_natural);
 
