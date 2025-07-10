@@ -62,11 +62,11 @@ sub BUILD {
 	# Check 'description'.
 	check_array_object($self, 'description', 'Data::Text::Simple', 'Description');
 
-	# Check 'invalidated'.
-	check_isa($self, 'invalidated', 'Data::OFN::Common::TimeMoment');
-
 	# Check 'id'.
 	check_positive_natural($self, 'id');
+
+	# Check 'invalidated'.
+	check_isa($self, 'invalidated', 'Data::OFN::Common::TimeMoment');
 
 	# Check 'iri'.
 	check_iri($self, 'iri');
