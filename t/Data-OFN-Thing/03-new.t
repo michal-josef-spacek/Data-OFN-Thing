@@ -7,7 +7,7 @@ use Data::Text::Simple;
 use DateTime;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
 use Test::NoWarnings;
 use Unicode::UTF8 qw(decode_utf8);
 
@@ -54,6 +54,13 @@ $obj = Data::OFN::Thing->new(
 			'text' => decode_utf8('Jméno'),
 		),
 	],
+	'related_to' => Data::OFN::Common::TimeMoment->new(
+		'date' => DateTime->new(
+			'day' => 12,
+			'month' => 12,
+			'year' => 2024,
+		),
+	),
 	'updated' => Data::OFN::Common::TimeMoment->new(
 		'date' => DateTime->new(
 			'day' => 30,
@@ -72,4 +79,14 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'id' must be a positive natural number.\n",
 	"Parameter 'id' must be a positive natural number (bad).");
+clean();
+
+# Test.
+eval {
+	Data::OFN::Thing->new(
+		'iri' => '://foo',
+	);
+};
+is($EVAL_ERROR, "Parameter 'iri' doesn't contain valid IRI.\n",
+	"Parameter 'iri' doesn't contain valid IRI (://foo).");
 clean();
