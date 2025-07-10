@@ -2,10 +2,13 @@ TODO
 ====
 2. Doc.
 3. Tests.
-4. Fixtures
 5.
 
 Applied
 =======
 1. Check IRI.
 OK [20250708] skim
+
+4. Fixtures
+Move to Test::Shared::Fixture::Data::OFN::Thing module.
+NONE [20250710] skim
