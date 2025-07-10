@@ -1,6 +1,5 @@
 TODO
 ====
-2. Doc.
 3. Tests.
 Finish error tests in constructor.
 5.
@@ -13,3 +12,6 @@ OK [20250708] skim
 4. Fixtures
 Move to Test::Shared::Fixture::Data::OFN::Thing module.
 NONE [20250710] skim
+
+2. Doc.
+OK [20250710] skim

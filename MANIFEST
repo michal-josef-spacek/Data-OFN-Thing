@@ -1,5 +1,7 @@
 Changes
 CONCEPT
+examples/thing_invalidated.pl
+examples/thing_simple.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm

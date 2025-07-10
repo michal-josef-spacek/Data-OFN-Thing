@@ -24,6 +24,7 @@ meta-spec:
 name: Data-OFN-Thing
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
