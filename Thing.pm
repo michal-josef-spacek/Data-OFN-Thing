@@ -326,6 +326,10 @@ Returns L<Data::OFN::Common::TimeMoment> instance.
                          Value: %s
                          Reference: %s
 
+         From Mo::utils::IRI::check_iri():
+                 Parameter 'iri' doesn't contain valid IRI.
+                         Value: %s
+
          From Mo::utils::Number::check_positive_natural():
                  Parameter 'id' must be a positive natural number.
                          Value: %s
